@@ -11,7 +11,7 @@ public class PasswordUtils {
 	public PasswordUtils() {
 	}
 	
-	public static String geraBCrypt(String senha) {
+	public static String gerarBCrypt(String senha) {
 		if (senha == null) {
 			return senha;
 		}
