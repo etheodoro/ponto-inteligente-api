@@ -9,7 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import com.etheodoro.pontointeligente.api.entity.Lancamento;
+import com.etheodoro.pontointeligente.api.entities.Lancamento;
 import com.etheodoro.pontointeligente.api.repositories.LancamentoRepository;
 import com.etheodoro.pontointeligente.api.services.LancamentoService;
 

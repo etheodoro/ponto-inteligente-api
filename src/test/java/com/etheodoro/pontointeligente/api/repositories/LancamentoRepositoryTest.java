@@ -17,9 +17,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.etheodoro.pontointeligente.api.entity.Empresa;
-import com.etheodoro.pontointeligente.api.entity.Funcionario;
-import com.etheodoro.pontointeligente.api.entity.Lancamento;
+import com.etheodoro.pontointeligente.api.entities.Empresa;
+import com.etheodoro.pontointeligente.api.entities.Funcionario;
+import com.etheodoro.pontointeligente.api.entities.Lancamento;
 import com.etheodoro.pontointeligente.api.enums.PerfilEnum;
 import com.etheodoro.pontointeligente.api.enums.TipoEnum;
 import com.etheodoro.pontointeligente.api.utils.PasswordUtils;

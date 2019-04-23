@@ -2,7 +2,7 @@ package com.etheodoro.pontointeligente.api.services;
 
 import java.util.Optional;
 
-import com.etheodoro.pontointeligente.api.entity.Empresa;
+import com.etheodoro.pontointeligente.api.entities.Empresa;
 
 public interface EmpresaService {
 

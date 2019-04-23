@@ -1,4 +1,4 @@
-package com.etheodoro.pontointeligente.api.entity;
+package com.etheodoro.pontointeligente.api.entities;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -40,7 +40,7 @@ public class Funcionario implements Serializable {
 	private Float qtdHorasAlmoco;
 	private PerfilEnum perfil;
 	private Date dataCriacao;
-	private Date dataAlteracao;
+	private Date dataAtualizacao;
 	private Empresa empresa;
 	private List<Lancamento> lancamentos;
 
@@ -154,13 +154,13 @@ public class Funcionario implements Serializable {
 		this.dataCriacao = dataCriacao;
 	}
 
-	@Column(name = "data_alteracao", nullable = false)
-	public Date getDataAlteracao() {
-		return dataAlteracao;
+	@Column(name = "data_atualizacao", nullable = false)
+	public Date getDataAtualizacao() {
+		return dataAtualizacao;
 	}
 
-	public void setDataAlteracao(Date dataAlteracao) {
-		this.dataAlteracao = dataAlteracao;
+	public void setDataAtualizacao(Date dataAtualizacao) {
+		this.dataAtualizacao = dataAtualizacao;
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
@@ -183,22 +183,22 @@ public class Funcionario implements Serializable {
 
 	@PreUpdate
 	public void preUdate() {
-		dataAlteracao = new Date();
+		dataAtualizacao = new Date();
 	}
 	
 	@PrePersist
 	public void prePersist() {
 		final Date dataAtual = new Date();
 		dataCriacao = dataAtual;
-		dataAlteracao = dataAtual;
+		dataAtualizacao = dataAtual;
 	}
 	
 	@Override
 	public String toString() {
 		return "Funcionario [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
 				+ ", valorHora=" + valorHora + ", qtdHorasTrabalhadoDia=" + qtdHorasTrabalhadoDia + ", qtdHorasAlmoco="
-				+ qtdHorasAlmoco + ", perfil=" + perfil + ", dataCriacao=" + dataCriacao + ", dataAlteracao="
-				+ dataAlteracao + ", empresa=" + empresa + ", lancamentos=" + lancamentos + "]";
+				+ qtdHorasAlmoco + ", perfil=" + perfil + ", dataCriacao=" + dataCriacao + ", dataAtualizacao="
+				+ dataAtualizacao + ", empresa=" + empresa + ", lancamentos=" + lancamentos + "]";
 	}
 
 	

@@ -39,7 +39,7 @@ public class CadastroPJDto {
 	}
 
 	@NotEmpty(message = "Email não pode ser vazio.")
-	@Length(min = 35, max = 200, message = "Email deve ter entre 5 e 200 caracteres.")
+	@Length(min = 5, max = 200, message = "Email deve ter entre 5 e 200 caracteres.")
 	@Email(message="Email inválido.")
 	public String getEmail() {
 		return email;
@@ -59,8 +59,8 @@ public class CadastroPJDto {
 		this.cpf = cpf;
 	}
 
-	@NotEmpty(message = "CNPJ não pode ser vazio.")
-	@CNPJ(message="CNPJ inválido.")
+	@NotEmpty(message = "Razão social não pode ser vazio.")
+	@Length(min = 5, max = 200, message = "Razão social deve conter entre 5 e 200 caracteres.")
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
@@ -69,6 +69,8 @@ public class CadastroPJDto {
 		this.razaoSocial = razaoSocial;
 	}
 
+	@NotEmpty(message = "CNPJ não pode ser vazio.")
+	@CNPJ(message="CNPJ inválido.")
 	public String getCnpj() {
 		return cnpj;
 	}

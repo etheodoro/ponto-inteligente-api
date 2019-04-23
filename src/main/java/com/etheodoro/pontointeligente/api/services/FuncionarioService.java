@@ -2,7 +2,7 @@ package com.etheodoro.pontointeligente.api.services;
 
 import java.util.Optional;
 
-import com.etheodoro.pontointeligente.api.entity.Funcionario;
+import com.etheodoro.pontointeligente.api.entities.Funcionario;
 
 public interface FuncionarioService {
 
@@ -13,7 +13,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Funcionario persistir(Funcionario funcionario) throws Exception; 
+	Funcionario persistir(Funcionario funcionario); 
 	
 	/**
 	 * Busca e retorna um funcionaro pelo cpf
@@ -22,7 +22,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorCpf(String cpf) throws Exception;
+	Optional<Funcionario> buscaPorCpf(String cpf);
 	
 	/**
 	 * Busca e retorna um funcionario pelo email 
@@ -31,7 +31,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorEmail(String email) throws Exception;
+	Optional<Funcionario> buscaPorEmail(String email);
 	
 	/**
 	 * Busca e retorna um funcionario peli Id
@@ -40,7 +40,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorId(Long id) throws Exception;
+	Optional<Funcionario> buscaPorId(Long id);
 	
 	
 }

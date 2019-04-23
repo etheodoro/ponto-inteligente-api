@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.etheodoro.pontointeligente.api.dtos.CadastroPJDto;
-import com.etheodoro.pontointeligente.api.entity.Empresa;
-import com.etheodoro.pontointeligente.api.entity.Funcionario;
+import com.etheodoro.pontointeligente.api.entities.Empresa;
+import com.etheodoro.pontointeligente.api.entities.Funcionario;
 import com.etheodoro.pontointeligente.api.enums.PerfilEnum;
 import com.etheodoro.pontointeligente.api.response.Response;
 import com.etheodoro.pontointeligente.api.services.EmpresaService;
@@ -28,7 +28,7 @@ import com.etheodoro.pontointeligente.api.utils.PasswordUtils;
 /* @RestController - essa anotation serve para informar que a classe é um endPoint */
 /* @CrossOrigin(origins = "*") - Habilita permite requisição de qualquer lugar */
 @RestController
-@RequestMapping("/api/cadastro-pj")
+@RequestMapping("/api/cadastrar-pj")
 @CrossOrigin(origins = "*")
 public class CadastroPJController {
 

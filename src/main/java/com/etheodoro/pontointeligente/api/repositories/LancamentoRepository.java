@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.etheodoro.pontointeligente.api.entity.Lancamento;
+import com.etheodoro.pontointeligente.api.entities.Lancamento;
 
 @Transactional(readOnly = true)
 @NamedQueries({

@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.etheodoro.pontointeligente.api.entity.Empresa;
+import com.etheodoro.pontointeligente.api.entities.Empresa;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
