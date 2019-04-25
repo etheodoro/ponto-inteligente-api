@@ -22,7 +22,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorCpf(String cpf);
+	Optional<Funcionario> buscarPorCpf(String cpf);
 	
 	/**
 	 * Busca e retorna um funcionario pelo email 
@@ -31,7 +31,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorEmail(String email);
+	Optional<Funcionario> buscarPorEmail(String email);
 	
 	/**
 	 * Busca e retorna um funcionario peli Id
@@ -40,7 +40,7 @@ public interface FuncionarioService {
 	 * @return
 	 * @throws Exception
 	 */
-	Optional<Funcionario> buscaPorId(Long id);
+	Optional<Funcionario> buscarPorId(Long id);
 	
 	
 }

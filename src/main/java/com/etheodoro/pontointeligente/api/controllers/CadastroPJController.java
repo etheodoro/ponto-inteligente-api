@@ -105,9 +105,9 @@ public class CadastroPJController {
 	
 	private void validarDadosExistentes(CadastroPJDto cadastroPJDto, BindingResult result)  {
 		try {
-			this.empresaService.buscaPorCnpj(cadastroPJDto.getCnpj()).ifPresent(emp -> result.addError(new ObjectError("empresa", "Empresa já existente.")));
-			this.funcionarioService.buscaPorCpf(cadastroPJDto.getCpf()).ifPresent(func -> result.addError(new ObjectError("funcionario","CPF já existente.")));
-			this.funcionarioService.buscaPorEmail(cadastroPJDto.getEmail()).ifPresent(func -> result.addError(new ObjectError("funcionario","Email já existente.")));
+			this.empresaService.buscarPorCnpj(cadastroPJDto.getCnpj()).ifPresent(emp -> result.addError(new ObjectError("empresa", "Empresa já existente.")));
+			this.funcionarioService.buscarPorCpf(cadastroPJDto.getCpf()).ifPresent(func -> result.addError(new ObjectError("funcionario","CPF já existente.")));
+			this.funcionarioService.buscarPorEmail(cadastroPJDto.getEmail()).ifPresent(func -> result.addError(new ObjectError("funcionario","Email já existente.")));
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}

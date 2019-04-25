@@ -49,21 +49,21 @@ public class FuncionarioServicesTest {
 	
 	@Test
 	public void testBuscarFuncionarioPorId() throws Exception {
-		Optional<Funcionario> funcionario = this.funcionarioService.buscaPorId(1L);
+		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorId(1L);
 		
 		assertTrue(funcionario.isPresent());
 	}
 	
 	@Test
 	public void testBuscarFuncionarioPorEmail() throws Exception {
-		Optional<Funcionario> funcionario = this.funcionarioService.buscaPorEmail("email@email.com");
+		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorEmail("email@email.com");
 		
 		assertTrue(funcionario.isPresent());
 	}
 	
 	@Test
 	public void testBuscarFuncionarioPorCpf() throws Exception {
-		Optional<Funcionario> funcionario = this.funcionarioService.buscaPorCpf("24291173474");
+		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorCpf("24291173474");
 		
 		assertTrue(funcionario.isPresent());
 	}
