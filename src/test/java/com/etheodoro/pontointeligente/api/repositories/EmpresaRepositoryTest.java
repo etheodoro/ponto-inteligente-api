@@ -18,7 +18,7 @@ import com.etheodoro.pontointeligente.api.entities.Empresa;
 @ActiveProfiles("test")
 public class EmpresaRepositoryTest {
 
-	//@Autowired
+	@Autowired
 	public EmpresaRepository empresaRepository;
 	
 	public static String CNPJ = "51463645000100";
