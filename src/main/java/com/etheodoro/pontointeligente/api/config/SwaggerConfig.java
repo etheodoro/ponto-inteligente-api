@@ -44,7 +44,6 @@ public class SwaggerConfig {
 				.build();
 	}
 
-	/*
 	@Bean
 	public SecurityConfiguration security() {
 		String token;
@@ -58,6 +57,5 @@ public class SwaggerConfig {
 		return new SecurityConfiguration(null, null, null, null, "Bearer " + token, ApiKeyVehicle.HEADER,
 				"Authorization", ",");
 	}
-	*/
 
 }
