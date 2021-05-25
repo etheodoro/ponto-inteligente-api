@@ -15,7 +15,6 @@ import com.etheodoro.pontointeligente.api.services.EmpresaService;
 public class EmpresaServiceImpl implements EmpresaService {
 
 	private static final Logger log = LoggerFactory.getLogger(EmpresaServiceImpl.class);
-	private String s;
 	
 	@Autowired
 	private EmpresaRepository empresaRepository;
@@ -32,6 +31,4 @@ public class EmpresaServiceImpl implements EmpresaService {
 		return this.empresaRepository.save(empresa);
 	}
 
-	
-	
 }
